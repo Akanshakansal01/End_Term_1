@@ -44,7 +44,7 @@ section{
 .book{
     padding:18px;
 }
-input[type="radio"]
+input[type="text"]
 {
     padding: 10px;
     font-size:18px;
@@ -56,6 +56,9 @@ input[type="radio"]
     justify-content: space-between;
     display: flex;
 }
+a{
+    text-decoration: none;
+}
 button{
     padding:10px;
     font-size: 20px;
@@ -66,3 +69,7 @@ button{
 .b1{
     padding: 18px;
 }
+/* #game{
+    font-size: 40px;
+    text-decoration: underline;
+} */
