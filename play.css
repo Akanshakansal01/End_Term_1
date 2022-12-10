@@ -1,0 +1,14 @@
+.play{
+    display: flex;
+    flex-wrap:wrap;
+    width:350px;
+    height:250px;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background-color: rgba(104, 104, 161, 0.368);
+}
