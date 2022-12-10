@@ -12,25 +12,25 @@ header{
     align-items:center;
     display:flex;
     justify-content:center;
-    height: 500x;
-    background-image: url(./BOOKS_IMAGES/l3.png);
+    height: 500px;
+    background-image: url(./BOOKS_IMAGES/image.png);
     border-radius: 25px;
 }
 main{
     padding:50px 0px;
     display:flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
 }
 article{
     background-color: white;
     width:800px;
     height:770px;
-
+    font-size: 40px;
 }
 aside{
     width:400px;
-    height:950px;
+    height:980px;
 
 }
 .title{
@@ -41,7 +41,7 @@ section{
     background-color: white;
     margin-bottom:30px;
 }
-book{
+.book{
     padding:18px;
 }
 input[type="radio"]
