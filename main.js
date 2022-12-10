@@ -14,15 +14,50 @@ function books(ele)
     console.log(ele.target.id);
     if(ele.target.id=="alice"){
         reading("C:\Users\LENOVO\Desktop\End_Term_1\BOOKS_IMAGES\AliceInWonderland.txt","Alice In Wonder Land");
+        document.getElementById(m);
+        m.innerHTML=`alice:385 time(s) <br>
+        very:144 time(s) <br>
+        little:128 time(s) <br>
+        out:113 time(s) <br>
+        down:101 time(s)`;
 
+        l.innerHTML=`gather:1 time(s) <br>
+        sorrows:1 time(s) <br>
+        joys: 1 time(s) <br>
+        remembering: 1 time(s) <br>
+        chile-life:1 time(s)`;
+        
     }
     if(ele.target.id=="lord")
     {
         reading("C:\Users\LENOVO\Desktop\End_Term_1\BOOKS_IMAGES\LOTR.txt","Lord of the Rings")
+        m.innerHTML=`lord:458 time(s) <br>
+        very:149 time(s) <br>
+        rings:149 time(s) <br>
+        power:127 time(s) <br>
+        most:113 time(s) <br>
+        for:101 time(s)`;
+
+        l.innerHTML=`hope:1 time(s) <br>
+        mercy:1 time(s) <br>
+        forever: 1 time(s) <br>
+        together: 1 time(s) <br>
+        courage:1 time(s)`;
     }
     if(ele.target.id=="hyde")
     {
         reading("C:\Users\LENOVO\Desktop\End_Term_1\BOOKS_IMAGES\JekyllAndHyde.txt","Jekyll and hyde")
+        m.innerHTML=`Jekyll:344 time(s) <br>
+        Hyde:284 time(s) <br>
+        most:124 time(s) <br>
+        doctor:113 time(s) <br>
+        its:101 time(s)`;
+
+        l.innerHTML=`job:1 time(s) <br>
+        murderous:1 time(s) <br>
+        light: 1 time(s) <br>
+        force: 1 time(s) <br>
+        dangerous:1 time(s)`;
     }
 }
 
@@ -56,14 +91,23 @@ function info(ti)
     l.forEach((l)=>{
         let w=l.split(" ");
         w.forEach((w1) => {
-            if(removeWords.indexOf(w1)==-1)
+            if(removeWords.indexOf(w1)==-1 && !(w1==" "))
             {
                 chars.push(w1);
                 ww.push(ti.split(w1).length);
             }
         })
     })
-    console.log(chars);
-    console.log(ww);
+    // console.log(chars);
+    let max=0;
+    let w2="";
+    for(let i=0;i<chars.length;i++){
+        if(ww[i]>max){
+            max=ww[i];
+            w2=chars[i];
+        }
+    }
+    console.log(w2);
+    // console.log(ww);
 
 }
