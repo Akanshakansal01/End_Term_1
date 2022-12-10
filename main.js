@@ -87,10 +87,10 @@ const removeWords = [ "a", "able", "about", "across", "after", "all", "almost", 
 
 function info(ti)
 {
-    var l=ti.split("\n");
+    var line=ti.split("\n");
     var chars=[];
     var ww=[];
-    l.forEach((l1)=>{
+    line.forEach((l1)=>{
         let w=l1.split(" ");
         w.forEach((w1) => {
             if(removeWords.indexOf(w1)==-1 && !(w1==" "))
