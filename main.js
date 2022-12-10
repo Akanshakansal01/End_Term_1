@@ -11,7 +11,7 @@ document.getElementsByTagName("hyde").addEventlistener("click",books);
 function books(ele)
 {
     ele.preventDefault();
-    console.log(ele.target.id);
+    // console.log(ele.target.id);
     if(ele.target.id=="alice"){
         reading("C:\Users\LENOVO\Desktop\End_Term_1\BOOKS_IMAGES\AliceInWonderland.txt","Alice In Wonder Land");
         document.getElementById(m);
@@ -90,8 +90,8 @@ function info(ti)
     var l=ti.split("\n");
     var chars=[];
     var ww=[];
-    l.forEach((l)=>{
-        let w=l.split(" ");
+    l.forEach((l1)=>{
+        let w=l1.split(" ");
         w.forEach((w1) => {
             if(removeWords.indexOf(w1)==-1 && !(w1==" "))
             {
