@@ -69,6 +69,8 @@ function reading(url,title)
         var ti=c.responseText;
         document.getElementById("bhead").innerText=title;
         document.getElementById("btext").innerText=ti;
+
+        info(ti);
     }
     c.send();
 }
@@ -109,5 +111,8 @@ function info(ti)
     }
     console.log(w2);
     // console.log(ww);
+    (document.getElementById("stats")).innerHTML=`Document Length: ${ti.length} 
+    <br>
+    Word Count: ${chars.length}`;
 
 }
