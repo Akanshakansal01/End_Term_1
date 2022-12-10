@@ -16,3 +16,53 @@ header{
     background-image: url(./BOOKS_IMAGES/l3.png);
     border-radius: 25px;
 }
+main{
+    padding:50px 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+article{
+    background-color: white;
+    width:800px;
+    height:770px;
+
+}
+aside{
+    width:400px;
+    height:950px;
+
+}
+.title{
+    padding: 10px;
+    background-color: rgba(118, 113, 113, 0.623);
+}
+section{
+    background-color: white;
+    margin-bottom:30px;
+}
+book{
+    padding:18px;
+}
+input[type="radio"]
+{
+    padding: 10px;
+    font-size:18px;
+}
+.books{
+    height: 160px;
+    font-size: 18px;
+    align-items: flex-start;
+    justify-content: space-between;
+    display: flex;
+}
+button{
+    padding:10px;
+    font-size: 20px;
+}
+.t1{
+    padding: 18px;
+}
+.b1{
+    padding: 18px;
+}
